@@ -132,7 +132,7 @@ export const Quiz = ({
               setHearts((prev) => Math.min(prev + 1, 5));
             }
           })
-          .catch(() => toast.error("Something went wrong. Please try again."))
+          .catch(() => toast.error("Algo salio mal intentalo de nuevo."))
       });
     } else {
       startTransition(() => {
@@ -182,7 +182,7 @@ export const Quiz = ({
             width={50}
           />
           <h1 className="text-xl lg:text-3xl font-bold text-neutral-700">
-            Great job! <br /> You&apos;ve completed the lesson.
+            Gran trabajo! <br /> Has completado la lección.
           </h1>
           <div className="flex items-center gap-x-4 w-full">
             <ResultCard
@@ -205,7 +205,7 @@ export const Quiz = ({
   }
 
   const title = challenge.type === "ASSIST" 
-    ? "Select the correct meaning"
+    ? "Selecciona la respuesta correcta"
     : challenge.question;
 
   return (

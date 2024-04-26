@@ -27,7 +27,7 @@ const main = async () => {
     const courses = await db
       .insert(schema.courses)
       .values([
-        { title: "Italian", imageSrc: "/it.svg" },
+        { title: "Italiano", imageSrc: "/it.svg" },
       ])
       .returning();
 
@@ -38,14 +38,14 @@ const main = async () => {
         .values([
           {
             courseId: course.id,
-            title: "Unit 1",
-            description: `Learn the basics of ${course.title}`,
+            title: "Unidad 1",
+            description: `Aprende básico ${course.title}`,
             order: 1,
           },
           {
             courseId: course.id,
-            title: "Unit 2",
-            description: `Learn intermediate ${course.title}`,
+            title: "Unidad 2",
+            description: `Aprende intermedio ${course.title}`,
             order: 2,
           },
         ])
@@ -72,49 +72,49 @@ const main = async () => {
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Wich of these is "the man"?',
+                question: '¿Cual de estos es "el hombre"?',
                 order: 1,
               },
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Wich of these is "the woman"?',
+                question: '¿Cual de estos es "la mujer"?',
                 order: 2,
               },
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Wich of these is "the boy"?',
+                question: '¿Cual de estos es "el chico"?',
                 order: 3,
               },
               {
                 lessonId: lesson.id,
                 type: "ASSIST",
-                question: '"the man"',
+                question: '"El hombre"',
                 order: 4,
               },
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Wich of these is "the zombie"',
+                question: '¿Cual de estos es "el zombi"',
                 order: 5,
               },
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Wich of these is "the robot',
+                question: '¿Cual de estos es "el robot"',
                 order: 6,
               },
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Wich of these is "the girl',
+                question: '¿Cual de estos es "la chica"',
                 order: 7,
               },
               {
                 lessonId: lesson.id,
                 type: "ASSIST",
-                question: '"the zombie"',
+                question: '"el zombi"',
                 order: 8,
               },
             ])
@@ -280,7 +280,7 @@ const main = async () => {
                 {
                   challengeId: challenge.id,
                   correct: true,
-                  text: "la chica",
+                  text: "la ragazza",
                   imageSrc: "/girl.svg",
                   audioSrc: "/it_chica.mp3",
                 },

@@ -31,7 +31,7 @@ export const SidebarItem = ({
         <Image
           src={iconSrc}
           alt={label}
-          className="mr-5"
+          className="mr-4"
           height={32}
           width={32}
         />
