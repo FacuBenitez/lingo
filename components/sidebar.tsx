@@ -19,7 +19,7 @@ type Props = {
 export const Sidebar = ({ className }: Props) => {
   return (
     <div className={cn(
-      "flex h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col",
+      "flex h-full lg:w-[256px] lg:fixed left-0 top-0 px-2 border-r-2 flex-col",
       className,
     )}>
       <Link href="/learn">
@@ -30,24 +30,24 @@ export const Sidebar = ({ className }: Props) => {
           </h1>
         </div>
       </Link>
-      <div className="flex flex-col gap-y-2 flex-1">
+      <div className="flex flex-col gap-y-1 flex-1">
         <SidebarItem 
-          label="Learn" 
+          label="Aprender" 
           href="/learn"
           iconSrc="/learn.svg"
         />
         <SidebarItem 
-          label="Leaderboard" 
+          label="Tabla de puntuacion" 
           href="/leaderboard"
           iconSrc="/leaderboard.svg"
         />
         <SidebarItem 
-          label="quests" 
+          label="Misiones" 
           href="/quests"
           iconSrc="/quests.svg"
         />
         <SidebarItem 
-          label="shop" 
+          label="Tienda" 
           href="/shop"
           iconSrc="/shop.svg"
         />

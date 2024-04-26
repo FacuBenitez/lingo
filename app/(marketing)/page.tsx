@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center gap-y-8">
         <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center">
-          Learn, practice, and master new languages with Lingo.
+          Aprende, practica, y domina nuevas lenguas con Lingo.
         </h1>
         <div className="flex flex-col items-center gap-y-3 max-w-[330px] w-full">
           <ClerkLoading>
@@ -33,7 +33,7 @@ export default function Home() {
                 afterSignUpUrl="/learn"
               >
                 <Button size="lg" variant="secondary" className="w-full">
-                  Get Started
+                  Comenzar
                 </Button>
               </SignUpButton>
               <SignInButton
@@ -42,14 +42,14 @@ export default function Home() {
                 afterSignUpUrl="/learn"
               >
                 <Button size="lg" variant="primaryOutline" className="w-full">
-                  I already have an account
+                  Ya tengo una cuenta
                 </Button>
               </SignInButton>
             </SignedOut>
             <SignedIn>
               <Button size="lg" variant="secondary" className="w-full" asChild>
                 <Link href="/learn">
-                  Continue Learning
+                  Continuar aprendiendo
                 </Link>
               </Button>
             </SignedIn>

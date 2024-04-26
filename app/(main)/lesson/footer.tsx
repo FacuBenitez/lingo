@@ -45,7 +45,7 @@ export const Footer = ({
             size={isMobile ? "sm" : "lg"}
             onClick={() => window.location.href = `/lesson/${lessonId}`}
           >
-            Practice again
+            Practicar denuevo
           </Button>
         )}
         <Button

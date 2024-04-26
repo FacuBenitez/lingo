@@ -39,10 +39,10 @@ export const ExitModal = () => {
             />
           </div>
           <DialogTitle className="text-center font-bold text-2xl">
-            Wait, don&apos;t go!
+            Espera, no salgas!
           </DialogTitle>
           <DialogDescription className="text-center text-base">
-            You&apos;re about to leave the lesson. Are you sure?
+            Esta seguro de que quieres dejar la lección?
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="mb-4">
@@ -53,7 +53,7 @@ export const ExitModal = () => {
               size="lg" 
               onClick={close}
             >
-              Keep learning
+              Sigue aprendiendo
             </Button>
             <Button
               variant="dangerOutline" 
@@ -64,7 +64,7 @@ export const ExitModal = () => {
                 router.push("/learn");
               }}
             >
-              End session
+              Terminar aprendizaje
             </Button>
           </div>
         </DialogFooter>
